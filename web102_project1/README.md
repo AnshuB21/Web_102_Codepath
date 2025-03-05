@@ -26,7 +26,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-[<img src='https://www.screentogif.com/' title='Video Walkthrough' width='' alt='Video Walkthrough' />](codepath_project1.mp4)
+[<img src='https://www.screentogif.com/' title='Video Walkthrough' width='' alt='Video Walkthrough' />](https://github.com/AnshuB21/Web_102_Codepath/blob/main/web102_project1/codepath_project1.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 
