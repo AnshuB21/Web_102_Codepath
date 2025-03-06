@@ -30,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-[<img src='https://www.screentogif.com/' title='Video Walkthrough' width='' alt='Video Walkthrough' />](Web102_Project2.gif)
+[<img src='https://www.screentogif.com/' title='Video Walkthrough' width='' alt='Video Walkthrough' />]([Web102_Project2.gif](https://github.com/AnshuB21/Web_102_Codepath/blob/main/web102_project2/Project2/src/Web102_Project2.gif))
 
 <!-- Replace this with whatever GIF tool you used! -->
 
