@@ -1,0 +1,72 @@
+/* Container Styling */
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+/* Card Styling */
+.Filpped,
+.NotFilpped {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Different background colors for flipped and not flipped */
+.Filpped {
+  background-color: #3bff48b8;
+  transform: rotateX(180deg);
+}
+
+.NotFilpped {
+  background-color: #f46f03c9;
+}
+
+/* Hide Answer when Not Flipped, Hide Question when Flipped */
+.Filpped .Question {
+  display: none;
+}
+
+.NotFilpped .Answer {
+  display: none;
+}
+.Filpped .Answer {
+  transform: rotateX(180deg);
+}
+.NotFilpped .Question {
+  transform: rotateX(0deg);
+}
+
+/* Buttons Styling */
+.Buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.Buttons button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.Buttons button:hover {
+  background-color: #555;
+}
