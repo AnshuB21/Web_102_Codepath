@@ -29,7 +29,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-Screentogif app
+Screentogif app 
+-Videowalkthrough
+(https://github.com/AnshuB21/Web_102_Codepath/blob/main/Web102-Project3/src/Web102_Project2.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
