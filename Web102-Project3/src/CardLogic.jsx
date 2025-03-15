@@ -2,11 +2,17 @@ import { data } from "./data.js";
 import { Card } from "./Card";
 import { useState } from "react";
 
-export const CardLogic = ({ streak, setStreak }) => {
+export const CardLogic = ({
+  streak,
+  setStreak,
+  longestStreak,
+  SetLongestStreak,
+}) => {
   const [Flipped, setFlipped] = useState(false);
   const [count, setCount] = useState(0);
   const [guess, setGuess] = useState("");
   const [guessBg, setGuessBg] = useState("revert");
+  var max = 0;
 
   const AnswerPreview = () => {
     setFlipped(!Flipped);
@@ -34,9 +40,16 @@ export const CardLogic = ({ streak, setStreak }) => {
         guess.toLowerCase().trim() == data[count].answer.toLowerCase().trim()
       ) {
         setGuessBg("lightgreen");
-        setStreak(streak + 1);
+        setGuess("Correct answer");
+        setStreak((prevStreak) => {
+          const newStreak = prevStreak + 1;
+          // Update the longest streak if newStreak exceeds it
+          SetLongestStreak((prevLongest) => Math.max(prevLongest, newStreak));
+          return newStreak;
+        });
       } else {
-        setGuessBg("pink");
+        setGuessBg("red");
+        setGuess("wrong answer");
         setStreak(0);
       }
     } else {
@@ -55,7 +68,7 @@ export const CardLogic = ({ streak, setStreak }) => {
         />
       </button>
       <div>
-        <form onSubmit={handleSubmit}>
+        <form style={{ paddingTop: "10px" }} onSubmit={handleSubmit}>
           <label htmlFor="guess">Guess Answer: </label>
           <input
             type="text"
