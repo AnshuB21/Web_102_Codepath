@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 - [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
-
+https://imgur.com/a/seEVOde
 Here's a walkthrough of implemented user stories:
 
 <img src='[http://i.imgur.com/link/to/your/gif/file.gif](https://imgur.com/a/seEVOde)' title='Video Walkthrough' width='' alt='Video Walkthrough' />
