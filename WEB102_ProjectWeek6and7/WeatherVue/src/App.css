@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px; 
+  height: 100%; 
+  background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.data-row {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  gap: 25px;
+  position: absolute;
+  top: 5%; 
+  left: 20.5%; 
+}
+
+.tempChart {
+  background-color: rgba(255, 255, 255, 0.5); 
+  width: 400px;
+  height: 65%;
+  display: flex; 
+  position: absolute;
+  top: 30%; 
+  left:73.5%; 
+  border-radius: 15px;
+}
+
+.summary {
+  position: absolute;
+  top: 50%; 
+  left:60%; 
+  width: 51%; 
+  height: 50%; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  transform: translate(-50%, -50%); 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  position: absolute;
+  color: black;
+  font-weight: 300;
+}
